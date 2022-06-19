@@ -1,1 +1,0 @@
-# mr-clothing-section-test
