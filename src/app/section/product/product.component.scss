@@ -1,0 +1,131 @@
+.product-container {
+    width: 920px;
+    margin: 30px auto;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+
+    .product-container-left {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        .product-container-left__image {
+
+            @media screen and (max-width: 767px) {
+                padding: 20px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .product-container-right {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 90px;
+        width: 50%;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .product-container-right__container {
+            display: block;
+            font-family: var( --font-family-1);
+
+            @media screen and (max-width: 767px) {
+                padding: 20px;
+            }
+
+            .product-container-right__container-name {
+                font-size: 1.4em;
+                font-weight: bold;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(204, 204, 204, 0.2);
+                color: var(--font-color-1);
+
+                @media screen and (max-width: 767px) {
+                    padding-bottom: 10px;
+                    border-bottom: unset;
+                }
+            }
+
+            .product-container-right__container-price {
+                font-size: 1.08em;
+                font-weight: bold;
+                padding: 8px 0;
+                border-bottom: 1px solid rgba(204, 204, 204, 0.2);
+                color: var(--font-color-1);
+
+                @media screen and (max-width: 767px) {
+                    padding-bottom: 10px;
+                    border-bottom: unset;
+                }
+            }
+
+            .product-container-right__container-description {
+                padding: 20px 0;
+                color: var(--font-color-2);
+                font-size: 0.88em;
+                line-height: 1.6;
+            }
+
+            .product-container-right__container-size-label {
+                color: var(--font-color-2);
+                font-size: 0.76em;
+                font-weight: bold;
+
+                &::after {
+                    content: '*';
+                    color: var(--required-color);
+                }
+            }
+
+            .product-container-right__container-size {
+
+                padding: 14px 0;
+
+                .product-container-right__container-size__item {
+                    font-size: 0.8em;
+                    cursor: pointer;
+                    color: var(--font-color-2);
+                    display:inline-block;
+                    padding: 10px;
+                    width: 18px;
+                    text-align: center;
+                    border: 1.6px solid var(--border-light-color);
+                    margin-right: 4px;
+
+                    &:hover {
+                        border: 1.6px solid var(--border-dark-color);
+                        color: var(--font-color-1);
+                    }
+
+                    &:active {
+                        border: 1.6px solid var(--border-dark-color);
+                        color: var(--font-color-1);
+                    }
+                }
+            }
+
+            .product-container-right__container-add {
+                border: 2px solid var(--border-dark-color);
+                width: 150px; 
+                text-align: center;
+                font-weight: bold;
+                color: var(--font-color-1);
+                cursor: pointer;
+                padding: 10px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.header-container {
+
+    width: 100%;
+    background-color: var(--header-background-color);
+    margin-top: 20px;
+
+    .header-container-navigation {
+        display: inline-block;
+        width: 80%;
+    }
+
+    .header-container-cart {
+        display: inline-block;
+    }
+}

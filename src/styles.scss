@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    --header-background-color: #f6f6f7;
+    
+    --font-color-1: #222222;
+    --font-color-2: #888888;
+
+    --font-family-1: '"Open-Sans", sans-serif';
+    
+    --required-color: #C90000;
+    --border-light-color: #CCCCCC;
+    --border-dark-color: #222222;
+
+    margin: 0;
+}
+

@@ -1,0 +1,9 @@
+<div class="cart-container">
+    <div class="cart-container-label" (click)="toggleModal()">
+        My Cart {{cartQuantityText}}
+    </div>
+
+    <div *ngIf="isModalShow" class="cart-container-modal">
+        <div class="cart-container-modal__item"></div>
+    </div>
+</div>

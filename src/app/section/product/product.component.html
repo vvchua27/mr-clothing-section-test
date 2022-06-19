@@ -1,0 +1,27 @@
+<div class="product-container">
+    <div class="product-container-left">
+        <div class="product-container-left__image">
+            <img src="{{productImage}}">
+        </div>
+    </div>
+    <div class="product-container-right">
+        <div class="product-container-right__container">
+            <div class="product-container-right__container-name">
+                {{productName}}
+            </div>
+            <div class="product-container-right__container-price">
+                {{productCurrency}}{{productPrice}}
+            </div>
+            <div class="product-container-right__container-description">
+                {{productDescription}}
+            </div>
+            <div class="product-container-right__container-size-label">SIZE</div>
+            <div class="product-container-right__container-size">
+                <div *ngFor="let size of productSizeOptions" class="product-container-right__container-size__item" [id]="size.id">
+                    {{size.label}}
+                </div>
+            </div>
+            <div class="product-container-right__container-add">ADD TO CART</div>
+        </div>
+    </div>
+</div>
