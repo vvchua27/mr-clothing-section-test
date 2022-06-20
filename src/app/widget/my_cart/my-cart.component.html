@@ -1,9 +1,26 @@
 <div class="cart-container">
-    <div class="cart-container-label" (click)="toggleModal()">
-        My Cart {{cartQuantityText}}
-    </div>
+    <div class="cart-container-label" (click)="toggleModal()"></div>
 
     <div *ngIf="isModalShow" class="cart-container-modal">
-        <div class="cart-container-modal__item"></div>
+        <div class="cart-container-modal__item">
+            <div class="cart-container-modal__item-image">
+                <img src="https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg">
+            </div>
+            <div class="cart-container-modal__item-details">
+                <div class="cart-container-modal__item-name">Classic Tee</div>
+                <div class="cart-container-modal__item-qty-amount">1x <b>$75.00</b></div>
+                <div class="cart-container-modal__item-size">Size: S</div>
+            </div>
+        </div>
+        <div class="cart-container-modal__item">
+            <div class="cart-container-modal__item-image">
+                <img src="https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg">
+            </div>
+            <div class="cart-container-modal__item-details">
+                <div class="cart-container-modal__item-name">Classic Tee</div>
+                <div class="cart-container-modal__item-qty-amount">2x <b>$75.00</b></div>
+                <div class="cart-container-modal__item-size">Size: M</div>
+            </div>
+        </div>
     </div>
 </div>

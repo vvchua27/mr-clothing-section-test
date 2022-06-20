@@ -11,7 +11,6 @@ export class ProductService {
     ) {}
 
     getProduct(productLink: string) {
-        console.log(productLink);
         return this.httpClient.get(productLink);
     }
 }

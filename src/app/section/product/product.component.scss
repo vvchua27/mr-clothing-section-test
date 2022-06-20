@@ -110,7 +110,7 @@
                         color: var(--font-color-1);
                     }
 
-                    &:active {
+                    &.toggled {
                         border: 1.6px solid var(--border-dark-color);
                         color: var(--font-color-1);
                     }
@@ -125,6 +125,11 @@
                 color: var(--font-color-1);
                 cursor: pointer;
                 padding: 10px 0;
+
+                &:hover {
+                    background-color: var(--border-dark-color);
+                    color: #ffffff;
+                }
             }
         }
     }

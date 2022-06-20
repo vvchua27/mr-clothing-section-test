@@ -17,10 +17,50 @@
 
         position: absolute;
         min-height: 100px;
-        width: 200px;
+        width: 250px;
         // min-width: 200px;
         border: 1px solid var(--border-light-color);
-        max-width: 300px;
         background-color: #ffffff;
+        right: 200px;
+
+        @media screen and (max-width: 767px) {
+            width: 200px;
+            right: 6px;
+        }
+
+        .cart-container-modal__item {
+
+            display: block;
+            padding: 14px;
+
+            .cart-container-modal__item-image {
+                display: inline-block;
+                vertical-align: top;
+                width: 30%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .cart-container-modal__item-details {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 8px;
+
+                .cart-container-modal__item-name {
+                    margin-bottom: 8px;
+                }
+
+                .cart-container-modal__item-qty-amount {
+                    margin-bottom: 8px;
+
+                }
+
+                .cart-container-modal__item-size {
+
+                }
+            }
+        }
     }
 }
