@@ -1,5 +1,4 @@
 import { Component, AfterViewInit, OnInit, OnChanges, SimpleChanges } from '@angular/core';
-import { ProductComponent } from 'src/app/section/product/product.component';
 import { Injectable } from '@angular/core';
 
 @Injectable({
